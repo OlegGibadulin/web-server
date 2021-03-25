@@ -34,7 +34,7 @@ class Server:
             else:
                 while True:
                     conn, addr = self.__socket.accept()
-                    logging.info(f'Accept request from {addr}')
+                    # logging.info(f'Accept request from {addr}')
                     self.__handler.handle(conn)
                     conn.close()
         
